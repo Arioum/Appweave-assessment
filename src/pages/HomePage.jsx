@@ -60,7 +60,7 @@ const HomePage = () => {
           There are no products with the current filter
         </h4>
       )}
-      <section className='grid gap-[1.2rem] grid-cols-5 2xl:grid-cols-4 xl:grid-cols-3 sm:grid-cols-2 ssm:grid-cols-1'>
+      <section className='mb-[2em] grid gap-[1.2rem] grid-cols-5 2xl:grid-cols-4 xl:grid-cols-3 sm:grid-cols-2 ssm:grid-cols-1'>
         {filteredProducts.map((product, index) => (
           <ProductCard key={index} product={product} addToCart={addToCart} />
         ))}

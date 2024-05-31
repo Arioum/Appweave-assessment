@@ -48,7 +48,6 @@ const FilterLayout = ({ setSearchQuery, setFilters }) => {
         <option value='Blue'>Blue</option>
         <option value='White'>White</option>
         <option value='Black'>Black</option>
-        {/* Add more colors */}
       </select>
       <select
         name='type'
@@ -58,22 +57,24 @@ const FilterLayout = ({ setSearchQuery, setFilters }) => {
         <option value=''>All Types</option>
         <option value='Polo'>Polo</option>
         <option value='T-Shirt'>T-Shirt</option>
-        <option value='Hoodie'>Hoodie</option>\
-        {/* Add more types */}
+        <option value='Hoodie'>Hoodie</option>
       </select>
-      <input
-        type='range'
-        name='priceRange'
-        min='0'
-        max='100'
-        value={localFilters.priceRange[1]}
-        onChange={(e) =>
-          handleFilterChange({
-            target: { name: 'priceRange', value: [0, e.target.value] },
-          })
-        }
-      />
-      <span>Up to ${localFilters.priceRange[1]}</span>
+      <div className='flex gap-3'>
+        <span>Price: </span>
+        <input
+          type='range'
+          name='priceRange'
+          min='0'
+          max='100'
+          value={localFilters.priceRange[1]}
+          onChange={(e) =>
+            handleFilterChange({
+              target: { name: 'priceRange', value: [0, e.target.value] },
+            })
+          }
+        />
+        <span>Up to ${localFilters.priceRange[1]}</span>
+      </div>
     </section>
   );
 };
