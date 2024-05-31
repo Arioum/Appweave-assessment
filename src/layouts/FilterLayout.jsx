@@ -20,10 +20,10 @@ const FilterLayout = ({ setSearchQuery, setFilters }) => {
     setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
   };
   return (
-    <section className='flex items-center justify-between gap-[2em] flex-wrap'>
+    <section className='flex items-center justify-between gap-[2em] flex-wrap sm:text-[.8rem]'>
       <input
         type='text'
-        className='p-[.6rem_1em] min-w-[200px] max-w-[300px] bg-[#f5f5f5] rounded-[10px] border-[2px] border-[#d1d1d1]'
+        className='p-[.6rem_1em] min-w-[200px] max-w-[300px] bg-[#f5f5f5] rounded-[10px] border-[2px] border-[#d1d1d1] sm:w-[100%]'
         value={localSearchQuery}
         onChange={handleSearchChange}
         placeholder='Search by name, color, or type...'
@@ -72,6 +72,7 @@ const FilterLayout = ({ setSearchQuery, setFilters }) => {
               target: { name: 'priceRange', value: [0, e.target.value] },
             })
           }
+          className='w-[100px]'
         />
         <span>Up to ${localFilters.priceRange[1]}</span>
       </div>
