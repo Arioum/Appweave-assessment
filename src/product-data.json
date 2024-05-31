@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Cobalt Polo",
+    "color": "Blue",
+    "type": "Polo",
+    "gender": "Male",
+    "price": 29.99,
+    "quantity": 10,
+    "image": "https://images.unsplash.com/photo-1604006852748-903fccbc4019?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 2,
+    "name": "Vibrant Shirt",
+    "color": "Orange",
+    "type": "Hoodie",
+    "gender": "Female",
+    "price": 39.99,
+    "quantity": 15,
+    "image": "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 3,
+    "name": "Extravigant Hoodie",
+    "color": "White",
+    "type": "Hoodie",
+    "gender": "Male",
+    "price": 49.99,
+    "quantity": 15,
+    "image": "https://images.unsplash.com/photo-1647771746351-7235cf9df865?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 4,
+    "name": "Black T-Shirt",
+    "color": "Black",
+    "type": "T-Shirt",
+    "gender": "Female",
+    "price": 15.99,
+    "quantity": 15,
+    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 5,
+    "name": "Green T-Shirt",
+    "color": "Green",
+    "type": "T-Shirt",
+    "gender": "Male",
+    "price": 19.99,
+    "quantity": 15,
+    "image": "https://images.unsplash.com/photo-1606802523486-7fb118e84b8c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 6,
+    "name": "T-Shirt",
+    "color": "White",
+    "type": "T-Shirt",
+    "gender": "Male",
+    "price": 10.99,
+    "quantity": 25,
+    "image": "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+]
