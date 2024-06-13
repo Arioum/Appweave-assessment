@@ -6,6 +6,7 @@ const FilterLayout = ({ setSearchQuery, setFilters }) => {
     gender: '',
     color: '',
     type: '',
+    stock: '',
     priceRange: [0, 100],
   });
 
@@ -59,6 +60,17 @@ const FilterLayout = ({ setSearchQuery, setFilters }) => {
         <option value='T-Shirt'>T-Shirt</option>
         <option value='Hoodie'>Hoodie</option>
       </select>
+
+      <select
+        name='stock'
+        value={localFilters.stock}
+        onChange={handleFilterChange}
+      >
+        <option value=''>All</option>
+        <option value='InStock'>In Stock</option>
+        <option value='OutOfStock'>Out of stock</option>
+      </select>
+
       <div className='flex gap-3'>
         <span>Price: </span>
         <input

@@ -12,6 +12,7 @@ const HomePage = () => {
     gender: '',
     color: '',
     type: '',
+    stock: '',
     priceRange: [0, 100],
   });
 
@@ -45,6 +46,9 @@ const HomePage = () => {
       (!filters.gender || product.gender === filters.gender) &&
       (!filters.color || product.color === filters.color) &&
       (!filters.type || product.type === filters.type) &&
+      (!filters.stock ||
+        (product.quantity > 0 && filters.stock === 'InStock') ||
+        (product.quantity === 0 && filters.stock === 'OutOfStock')) &&
       product.price >= filters.priceRange[0] &&
       product.price <= filters.priceRange[1];
     return matchesSearch && matchesFilter;

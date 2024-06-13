@@ -33,13 +33,11 @@ function SearchFilter({ setSearchQuery, setFilters }) {
         <option value="Red">Red</option>
         <option value="Green">Green</option>
         <option value="Blue">Blue</option>
-        {/* Add more colors */}
       </select>
       <select name="type" value={localFilters.type} onChange={handleFilterChange}>
         <option value="">All Types</option>
         <option value="Polo">Polo</option>
         <option value="T-Shirt">T-Shirt</option>
-        {/* Add more types */}
       </select>
       <input
         type="range"
